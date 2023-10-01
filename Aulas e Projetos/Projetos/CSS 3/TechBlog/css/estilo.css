@@ -7,8 +7,9 @@
 body {
     font-size: 1em;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    background-color: #e6e6e6;
+    background: #e6e6e6;
 }
+
 
 /*
 --- <Layout> ---
@@ -31,10 +32,7 @@ body {
 #main {
     width: 920px;
     margin: 0 auto;
-}
-
-#area-postagens, #area-lateral {
-    background: orange;
+    padding: 15px;
 }
 
 #area-postagens {
@@ -46,6 +44,12 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     background: white;
+}
+
+.conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 #area-lateral{
@@ -60,6 +64,31 @@ body {
     background: #ccc;
 }
 
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    
+}
+
+.image { 
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+
+}
+.zoom-on-hover {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: all 1.1s;
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.2);
+}
 /*
 --- <Menu> ---
 */
@@ -69,14 +98,28 @@ a {
 }
 
 a:link, a:visited {
+    color: #f7b600;     
+} 
+
+a:hover {
+    text-decoration: underline;
+}
+
+#cabecalho a:link, #cabecalho a:visited {
     color: #fff;
     padding: 8px 12px;
     
 } 
 
-a:hover {
+#cabecalho a:hover {
     color: #f7b600;
-    background: #e6e6e6;
+    background: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#area-postagens a:hover {
+    color: #565656;
 }
 
 
@@ -90,7 +133,29 @@ h1{
    font-size: 2.5em; 
 }
 
+h2 {
+    color: #f7b600;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #565656;
+    background: #ccc;
+    padding: 5px;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
 
 .white{
     color: white;
+}
+
+p {
+    margin-top: 8px;
 }
