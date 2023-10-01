@@ -23,6 +23,8 @@ body {
 
 #logo{
     padding: 10px;
+    text-align: left;
+    margin-left: 25%;
 }
 
 #menu{
@@ -67,7 +69,6 @@ body {
 .postagem-lateral {
     font-size: 0.8em;
     padding: 5px;
-    
 }
 
 .image {
