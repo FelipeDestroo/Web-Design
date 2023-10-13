@@ -1,0 +1,55 @@
+/* Seletor Universal 
+*{
+    border: 1px solid red;
+}
+*/
+
+/* Seletor de Texto 
+h1, h2, h3 {
+    color: green;
+}
+*/
+
+/* Seletor de classe 
+.verde {
+    color: green;
+}
+
+p.verde{
+    color: green;
+}
+*/
+
+/* Seletor de ID
+#cabecalho {
+    border: 1px solid blue;
+*/
+
+/* Seletor de filho 
+li>a{
+    color: red;
+    text-decoration: none;
+}
+*/
+
+/* Seletor de Descendente 
+p a{
+    color: green;
+}
+
+ul a{
+    color: brown;
+}
+*/
+
+/* Seletor de irmão adjacente 
+h1+p {
+    color: red;
+}
+*/
+
+/* Seletor de irmão geral */
+
+h1~p{
+    color: red ;
+}
