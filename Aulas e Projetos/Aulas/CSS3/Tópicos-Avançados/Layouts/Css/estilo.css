@@ -4,9 +4,9 @@ body {
 }
 
 #container {
-    width: 85%; /*720px*/
+    width: 960px; /*720px*/
     margin: 0 auto;
-    background: #fff;
+    background: #fff url(../Imagens/coluna.png) repeat-y left top;
     min-width: 720px; /* Limita o tamanho minimo*/  
   /*max-width: 960px; Limita o tamanho maximo*/
 }
@@ -59,7 +59,7 @@ img.img-noticia {
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
+    /*background: #d1d1d1;*/
 }
 
 #navegacao ul {
